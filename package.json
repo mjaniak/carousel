@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjaniak/rock-paper-scissors-3.git"
+    "url": "git+https://github.com/mjaniak/applying-carousel-slider-plugin.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mjaniak/rock-paper-scissors-3/issues"
+    "url": "https://github.com/mjaniak/applying-carousel-slider-plugin/issues"
   },
-  "homepage": "https://github.com/mjaniak/rock-paper-scissors-3#readme",
+  "homepage": "https://github.com/mjaniak/applying-carousel-slider-plugin#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.7",
