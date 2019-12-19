@@ -1,52 +1,36 @@
 <!doctype html>
-
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
 
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
-  <style>
-        #map {
-          width: 100%;
-          height: 400px;
-          background-color: grey;
-        }
-  </style>
-
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="vendor/flickity.min.css">
   <link rel="stylesheet" href="vendor/normalize.css">
 </head>
 
 <body>
-    <div class="main-carousel">
-        <div class="carousel-cell" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
-            <div class="container">one</div>
-        </div>
-        <div class="carousel-cell" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
-            <div class="container">two</div>
-        </div>
-        <div class="carousel-cell" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
-            <div class="container">three</div>
-        </div>
-        <div class="carousel-cell" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
-            <div class="container">four</div>
-        </div>
-        <div class="carousel-cell" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
-            <div class="container">five</div>
-        </div>
+    <div class="carousel"
+         data-flickity='{"contain": true, "pageDots": false, "hash": true }'>
+        <div class="carousel-cell" id="carousel-cell1" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)"></div>
+        <div class="carousel-cell" id="carousel-cell2" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)"></div>
+        <div class="carousel-cell" id="carousel-cell3" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)"></div>
+        <div class="carousel-cell" id="carousel-cell4" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)"></div>
+        <div class="carousel-cell" id="carousel-cell5" style="background-image: url(https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)"></div>
     </div>
-    <div class="mainmap">
-        <div id="map"></div>
+
+    <a href="#carousel-cell2">View cell 2</a>
+
+    <div id="page-wrapper" class="container">
+      <div id="map"></div>
     </div>
-    <script async defer
-           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiXQUZFoKc-_9q9Bx7nUFvrZi7mvBR7ZY&callback=initMap">
-    </script>
-  <script src="js/scripts.js"></script>
-  <script src="/path/to/flickity.pkgd.min.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiXQUZFoKc-_9q9Bx7nUFvrZi7mvBR7ZY&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUTPydGAimC-c88u_WQ1kCTegpHY52eM"></script>
+    <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./node_modules/flickity-hash/hash.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
