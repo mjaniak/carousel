@@ -3,39 +3,15 @@
 
 body { font-family: sans-serif; }
 
-.carousel {
-  background: #EEE;
-}
+.carousel { background: #EEE; }
 
-.carousel-cell {
-  background-size: cover;
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-.background-image {
-  width: 400px;
-  height: 200px;
-}
+.carousel-cell { width: 66%; height: 200px; margin-right: 10px; background: #8C8; border-radius: 5px; counter-increment: carousel-cell; }
+
 /* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
+.carousel-cell:before { display: block; text-align: center; content: counter(carousel-cell); line-height: 200px; font-size: 80px; color: white; }
 
-.container {
-	width: 100%; 
-	margin: 0 auto;
-}
+.progress-bar { height: 20px; width: 0; background: #333; }
 
-#map {
-	height: 200px;
-	width: 100%;
-}
+.flickity-page-dots { bottom: -40px; }
+
+#carousel-cell1, #carousel-cell2, #carousel-cell3, #carousel-cell4, #carousel-cell5 { background-image: url("https://images.unsplash.com/photo-1573867368999-5388ba407550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80") !important; background-size: contain; }
